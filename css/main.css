@@ -1,0 +1,243 @@
+/* Grow */
+@import url("https://fonts.googleapis.com/css?family=Lobster|Saira+Stencil+One&display=swap");
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform; }
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1); }
+
+/* Bounce In */
+.hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36); }
+
+/* Bob */
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px); }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px); }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate; }
+
+/* Google Font Import */
+/* Main Styles */
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #000;
+  color: #fff;
+  font-family: "Saira Stencil One", cursive; }
+
+/* Heder & Main Styles */
+header {
+  background-color: #fff;
+  color: #000;
+  padding: 0.3rem 0 0.01rem; }
+
+header,
+main {
+  text-align: center;
+  overflow: hidden; }
+
+h1 {
+  font-size: 2.3rem; }
+
+#description {
+  font-size: 1.3rem;
+  font-family: Lobster; }
+
+.container {
+  margin: auto auto;
+  padding: 1.5rem;
+  font-size: 1.1rem; }
+
+/* Form Styles */
+#survey-form {
+  margin: auto auto; }
+
+#name {
+  margin: auto 2rem 1rem 0;
+  width: 100%; }
+
+#email {
+  width: 100%; }
+
+#pjs-feel {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem; }
+
+.radio {
+  display: inline-block; }
+
+.checkbox {
+  display: inline-block; }
+
+input[type="text"],
+input[type="email"] {
+  background: #000;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  font-family: "Saira Stencil One", cursive;
+  text-align: center; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: #fff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  box-shadow: 0 0 0px 1000px #000 inset; }
+
+::placeholder {
+  color: #fff;
+  font-family: "Saira Stencil One"; }
+
+input[type="number"] {
+  background: #000;
+  width: 2.3rem;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-family: "Saira Stencil One", cursive; }
+
+input[type="number"] placeholder {
+  color: #fff; }
+
+select {
+  font-family: "Saira Stencil One", cursive;
+  width: 3.5rem;
+  background-color: #fff; }
+
+fieldset {
+  margin: auto 0 1rem auto;
+  border-radius: 1rem; }
+
+label[for] {
+  margin-right: 1rem; }
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  height: 6rem;
+  border-radius: 1rem;
+  resize: none;
+  padding: 1rem;
+  font-family: "Saira Stencil One", cursive;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff; }
+
+textarea::placeholder {
+  color: #fff;
+  font-size: 0.8rem; }
+
+#submit {
+  color: #fff;
+  background: #000;
+  transition: 1s;
+  width: 5rem;
+  padding: 0.3rem;
+  border-radius: 1rem;
+  font-family: "Saira Stencil One", cursive;
+  margin-bottom: 1rem; }
+
+#submit:hover {
+  color: #000;
+  background: #fff;
+  cursor: pointer; }
+
+footer {
+  text-align: center;
+  background-color: #121212;
+  padding: 1rem; }
+
+.fa-heart {
+  color: red; }
+
+@media screen and (max-width: 775px) {
+  .number, #dropdown {
+    display: block;
+    align-self: center;
+    margin: .3rem auto .3rem auto; } }
+
+@media screen and (max-width: 375px) {
+  #pjs-feel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  textarea::placeholder {
+    font-size: .9rem; } }
