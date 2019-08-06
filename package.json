@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://coderjones91.github.io/survey_form/?version=f36af92",
+  "homepage": "https://coderjones91.github.io/survey_form",
   "scripts": {
     "node-sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
