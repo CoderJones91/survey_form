@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+</head>
+
+<header>
+<h1 id="title">Survey Form</h1>
+<p id="description">Welcome To My Lovely Survey Form<br> Let me know a bit about you...
+</header>
+
+<main class="container">
+<form id="survey-form">
+  <label id="name-label">*Name:</label>
+  <input type="text" id="name" required placeholder="Enter your Name">
+  <label id="email-label">*Email:</label>
+  <input type="email" id="email" required placeholder="Enter your Email"><br>
+ <div id="pjs-feel">
+  <label id="number-label">Number of Projects:
+  <input type="number" class="number" min="1" max="17" placeholder="1-17">
+</label>
+<label id="years">Years Coding:
+<input type="number" class="number" min="0" max="21" placeholder="0-21">
+   </label>
+  <label id="select-label">How do you Feel?
+  <select type="dropdown" id="dropdown">
+    <option>Cool</option>
+    <option>Lame</option>
+    <option>Dope</option>
+  </select>
+    </div>
+<fieldset>
+  <legend>What's your Favorite Coding Language?</legend>
+  <div class="radio">
+  <input type="radio" name="languages" value="1">
+  <label for="1">HTML5</label>
+  </div>
+  <div class="radio">
+  <input type="radio" name="languages" value="2">
+  <label for="2">CSS3</label>
+</div>
+  <div class="radio">
+<input type="radio" name="languages" value="3">
+  <label for="3">JavaScript</label>
+  </div>
+  <div class="radio">
+  <input type="radio" name="languages" value="4">
+  <label for="4">PHP</label>
+  </div>
+  </fieldset>
+<fieldset>
+  <legend>
+   What/Who Helped you Learn How to Code?
+</legend>
+<div class="checkbox">
+<input type="checkbox" value="youtube">
+<label for="youtube">YouTube</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" value="codecademy">
+<label for="codecademy">Codecademy</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" value="treehouse">
+<label for="treehouse">Treehouse</label> 
+</div>
+<div class="checkbox">
+<input type="checkbox" value="udacity">
+<label for="udacity">Udacity</label> 
+</div> 
+<div class="checkbox">
+<input type="checkbox" value="fcc">
+<label for="fcc">freeCodeCamp</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" value="friend">
+<label for="friend">Friend</label>
+</div> 
+<div class="checkbox">
+<input type="checkbox" value="family">
+<label for="family">Family</label>  
+</div>
+<div class="checkbox">
+<input type="checkbox" value="teacher">
+<label for="teacher">Teacher</label>  
+</div> 
+<div class="checkbox">
+<input type="checkbox" value="self">
+<label for="self">Self Taught</label>
+</div> 
+</fieldset>
+<textarea placeholder="Any Additional Comments?">
+</textarea><br>
+<button type="submit" id="submit" class="hvr-bob">Submit</button>
+</form>
+</main>
+<footer>
+  Copyright &copy; 2019 | Coded w/ <i class="fa fa-heart"></i> by aCoder Jones
+</footer>
+<body>
+    
+</body>
+</html>
