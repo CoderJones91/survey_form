@@ -41,7 +41,7 @@ h1 {
   font-family: Lobster;
 }
 .container {
-  margin: auto auto;
+  margin: auto 3rem;
   padding: 1.5rem;
   font-size: 1.1rem;
 }
@@ -83,6 +83,7 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-text-fill-color: #fff !important;
   -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  box-shadow: 0 0 0px 1000px #000 inset;
 }
 ::placeholder {
   color: #fff;
@@ -156,21 +157,21 @@ footer {
 }
 
 @media screen and (max-width: 775px) {
-  .number, #dropdown {
+  .number,
+  #dropdown {
     display: block;
     align-self: center;
-    margin: .3rem auto .3rem auto
-    
+    margin: 0.3rem auto 0.3rem auto;
   }
 }
 @media screen and (max-width: 375px) {
-    #pjs-feel {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center
-      }
-      textarea::placeholder {
-          font-size: .9rem;
-      }
+  #pjs-feel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  textarea::placeholder {
+    font-size: 0.9rem;
+  }
 }
