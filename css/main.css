@@ -160,8 +160,11 @@ input:-webkit-autofill:active {
   box-shadow: 0 0 0px 1000px #000 inset; }
 
 ::placeholder {
-  color: #fff !important;
+  color: #fff;
   font-family: "Saira Stencil One"; }
+
+::-moz-placeholder {
+  color: #fff; }
 
 input[type="number"] {
   background: #000;
