@@ -191,6 +191,9 @@ footer {
     align-self: center;
     margin: 0.3rem auto 0.3rem auto;
   }
+  input[type=email], input[type=text] {
+    border-radius: 0;
+  }
 }
 @media screen and (max-width: 375px) {
   .container {
