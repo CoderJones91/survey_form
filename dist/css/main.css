@@ -98,6 +98,11 @@ body {
   color: #fff;
   font-family: "Saira Stencil One", cursive; }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0; }
+
+/* Pre Loader */
 .preloader {
   position: fixed;
   top: 0;
@@ -181,7 +186,8 @@ input:-webkit-autofill:active {
   font-family: "Saira Stencil One"; }
 
 ::-moz-placeholder {
-  color: #fff; }
+  color: #fff;
+  opacity: 1; }
 
 input[type="number"] {
   background: #000;
@@ -191,8 +197,13 @@ input[type="number"] {
   border-bottom: 1px solid #fff;
   font-family: "Saira Stencil One", cursive; }
 
-input[type="number"] placeholder {
-  color: #fff; }
+input[type="number"] ::placeholder {
+  color: #fff;
+  opacity: 1; }
+
+nput[type="number"] ::-moz-placeholder {
+  color: #fff;
+  opacity: 1; }
 
 select {
   font-family: "Saira Stencil One", cursive;
