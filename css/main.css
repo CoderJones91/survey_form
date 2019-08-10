@@ -93,8 +93,30 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: #000;
+  top: 0;
+  left: 0;
   color: #fff;
   font-family: "Saira Stencil One", cursive; }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0; }
+
+/* Pre Loader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: #000;
+  /* background: #000; */
+  transition: 2.5s; }
+
+.preloader.complete {
+  opacity: 0;
+  visibility: hidden; }
 
 /* Heder & Main Styles */
 header {
@@ -164,7 +186,8 @@ input:-webkit-autofill:active {
   font-family: "Saira Stencil One"; }
 
 ::-moz-placeholder {
-  color: #fff; }
+  color: #fff;
+  opacity: 1; }
 
 input[type="number"] {
   background: #000;
@@ -174,8 +197,13 @@ input[type="number"] {
   border-bottom: 1px solid #fff;
   font-family: "Saira Stencil One", cursive; }
 
-input[type="number"] placeholder {
-  color: #fff; }
+input[type="number"] ::placeholder {
+  color: #fff;
+  opacity: 1; }
+
+nput[type="number"] ::-moz-placeholder {
+  color: #fff;
+  opacity: 1; }
 
 select {
   font-family: "Saira Stencil One", cursive;
