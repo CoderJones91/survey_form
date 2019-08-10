@@ -263,7 +263,9 @@ footer {
   #dropdown {
     display: block;
     align-self: center;
-    margin: 0.3rem auto 0.3rem auto; } }
+    margin: 0.3rem auto 0.3rem auto; }
+  input[type=email], input[type=text], input[type=number] {
+    border-radius: 0; } }
 
 @media screen and (max-width: 375px) {
   .container {
