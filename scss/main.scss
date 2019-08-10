@@ -9,8 +9,28 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: #000;
+  top: 0;
+  left: 0;
   color: #fff;
   font-family: "Saira Stencil One", cursive;
+  
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: #000;
+  /* background: #000; */
+  transition: 2.5s;
+}
+
+.preloader.complete {
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* Heder & Main Styles */
